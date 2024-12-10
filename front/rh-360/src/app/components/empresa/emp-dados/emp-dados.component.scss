@@ -36,7 +36,6 @@
                 background-color: #ffffff;
                 padding: 12px;
 
-
                 .empresa-btn-editar {
                     color: #1f1fc2;
                     border: 1px solid #1f1fc2;
@@ -44,12 +43,38 @@
                     display: inline-block;
                     margin: 6px;
                     cursor: pointer;
+
+                    &:hover {
+                        background-color: #1f1fc2;
+                        color: #ffffff;
+                    }
                 }
             }
 
             .empresa-dados-campos {
                 background-color: #ffffff;
                 padding: 12px;
+                margin-top: 20px;
+
+                >div {
+                    display: flex;
+                    gap: 10px;
+
+                    >div {
+                        padding: 12px;
+                    }
+
+                    label {
+                        display: block;
+                        margin-bottom: 6px;
+                        color: #3e5684;
+                        font-weight: 600;
+                    }
+
+                    span {
+                        color: #5e5a5a;
+                    }
+                }
             }
         }
     }
