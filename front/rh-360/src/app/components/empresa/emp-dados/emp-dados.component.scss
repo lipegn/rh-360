@@ -1,0 +1,56 @@
+.empresa-container {
+    padding: 0;
+    display: flex;
+
+    >div {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .empresa-menu {
+        flex-basis: 16%;
+        background-color: #082044;
+        height: 100vh;
+    }
+
+    .empresa-top {
+        height: 80px;
+        text-align: right;
+        background-color: #ffffff;
+        padding-right: 38px;
+        padding-top: 8px;
+
+        img {
+            width: 60px;
+        }
+    }
+
+    .empresa-content {
+        flex-basis: 84%;
+        background-color: #f6f6f8;
+
+        .empresa-dados {
+            padding: 22px;
+
+            .empresa-dados-botao {
+                background-color: #ffffff;
+                padding: 12px;
+
+
+                .empresa-btn-editar {
+                    color: #1f1fc2;
+                    border: 1px solid #1f1fc2;
+                    padding: 8px 10px;
+                    display: inline-block;
+                    margin: 6px;
+                    cursor: pointer;
+                }
+            }
+
+            .empresa-dados-campos {
+                background-color: #ffffff;
+                padding: 12px;
+            }
+        }
+    }
+}
