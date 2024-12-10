@@ -1,0 +1,48 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+
+    .login-first-column {
+        padding-right: 40px;
+    }
+
+    .login-header {
+        img {
+            width: 60px;
+            margin-bottom: 12px;
+        }
+    }
+
+    .login-title {
+        font-family: sans-serif;
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .login-subTitle {
+        font-family: sans-serif;
+        font-size: 14px;
+        color: #818181;
+        margin-bottom: 8px;
+    }
+
+    .login-check {
+        margin-right: 10px;
+    }
+
+    .login-button {
+        color: #ffffff;
+        background: #a6269d;
+        padding: 8px 23px;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-family: "Poppins", sans-serif;
+        border-color: #a6269d;
+        font-size: 16px;
+        margin-bottom: 0;
+        width: 50%;
+        margin-top: 12px;
+        clip-path: padding-box;
+    }
+}
