@@ -1,13 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { EmpModalComponent } from '../emp-modal/emp-modal.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-emp-dados',
   standalone: true,
-  imports: [],
+  imports: [MatDialogModule,HttpClientModule],
   templateUrl: './emp-dados.component.html',
   styleUrl: './emp-dados.component.scss'
 })
 export class EmpDadosComponent {
+  readonly dialog = inject(MatDialog);
+  
   empresa: Partial<{
     nome: string
     , cnpj: string
@@ -30,5 +35,9 @@ export class EmpDadosComponent {
       , endereco: 'Avenida anhaia melo, 3333'
       , nome: 'Meu RH 360*'
     }
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(EmpModalComponent);
   }
 }

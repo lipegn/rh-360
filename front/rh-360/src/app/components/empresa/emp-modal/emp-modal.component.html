@@ -1,1 +1,38 @@
-<p>emp-modal works!</p>
+<div class="modal-container">
+    <h3>Editar Empresa</h3>
+    <hr>
+
+    <div class="modal-dados-campos">
+        <div>
+            <div>
+                <label>Nome da empresa*</label>
+                <input type="text" id="txtEmpresa">
+            </div>
+            <div>
+                <label>CNPJ da empresa*</label>
+                <input type="text" id="txtCnpj">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label>CEP</label>
+                <input type="text" id="txtCep" (blur)="consultaCEP($event)">
+            </div>
+            <div>
+                <label>Endereço</label>
+                <input type="text" id="txtEndereco">
+            </div>
+            <div>
+                <label>Bairro</label>
+                <input type="text" id="txtBairro">
+            </div>
+            <div>
+                <label>Cidade</label>
+                <input type="text" id="txtCidade">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <input type="button" value="Salvar" class="btnSalvar">
+</div>

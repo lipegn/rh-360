@@ -1,0 +1,29 @@
+.modal-container{
+    padding: 60px;
+
+    .modal-dados-campos {
+        background-color: #ffffff;
+        padding: 12px;
+        margin-top: 20px;
+
+        >div {
+            display: flex;
+            gap: 10px;
+
+            >div {
+                padding: 12px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 6px;
+                color: #3e5684;
+                font-weight: 600;
+            }
+
+            span {
+                color: #5e5a5a;
+            }
+        }
+    }
+}
